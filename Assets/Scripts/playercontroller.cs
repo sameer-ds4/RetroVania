@@ -76,6 +76,7 @@ public class playercontroller : MonoBehaviour
         }
         else dust.Stop();
 
+
         //---------------Jump check and animation---------------------------------------------------------------------------------------------
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -125,4 +126,18 @@ public class playercontroller : MonoBehaviour
             playerHealth += 1;
         }
     }
+
+    public void AnimaionManager()
+    {
+        
+    }
+}
+
+public enum anims
+{
+    idle,
+    run,
+    attack,
+    fall,
+    death
 }
